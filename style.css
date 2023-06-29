@@ -44,7 +44,6 @@
     margin: 10px;
     cursor: pointer;
 }
-<<<<<<< HEAD
 .Shimmer-container{
     display: flex;
     flex-wrap: wrap;
@@ -57,27 +56,8 @@
 }
 .login{
     padding: 0 20px;
-=======
-.shimmer-container{
-    display: flex ;
-    flex-wrap: wrap;
-}
-.shimmer-cards{
-    width: 200px;
-     height: 300px; 
-    background-color: #f0f0f0;
-    margin: 20px;
- 
-}
-.login{
-    padding: 8px 20px;
->>>>>>> 5e221f7adb73b59aa1ca9f6ccaeec5dd5d3d36e5
     cursor: pointer;
 }
 .filter{
     display: flex;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 5e221f7adb73b59aa1ca9f6ccaeec5dd5d3d36e5

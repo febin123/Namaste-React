@@ -3,6 +3,7 @@ import RestaurantCard from "./RestaurantCard"
 import { resList } from "../../utils/constants"
 import { useState } from "react";
 import Shimmer from "./Shimmer";
+import { Link } from "react-router-dom";
 const Body=()=>{
 
     const [listOfRestaurant,setListOfRestaurant]=useState([])
@@ -22,7 +23,7 @@ const Body=()=>{
         setFilteredRestaurants(json?.data?.cards[2]?.data?.data?.cards)
     }
     
-    return listOfRestaurant.length === 0 ? <Shimmer/>: (
+    return listOfRestaurant.length === 0 ? (<Shimmer/>): (
         <div className="body">
             <div className="filter">
                 <div className="search">
@@ -57,7 +58,7 @@ const Body=()=>{
 
             {
               filteredRestaurants.map((restaurant)=>
-              <RestaurantCard key={restaurant.data.id} resData={restaurant}/>)
+              <Link key={restaurant.data.id} to={"/rest/"+restaurant.data.id}> <RestaurantCard  resData={restaurant}/></Link>)
             }
              {/* <RestaurantCard resData={resList[0]}/>
              <RestaurantCard resData={resList[1]}/>

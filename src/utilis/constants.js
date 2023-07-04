@@ -716,3 +716,5 @@ export let resList=[
         "subtype": "basic"
       },
 ]
+
+export const MEnu_LIST="https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=19.113645&lng=72.8697339&restaurantId=";
